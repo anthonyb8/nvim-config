@@ -61,10 +61,10 @@ vim.api.nvim_set_keymap('v', 'y', '"+y', { noremap = true, silent = true })   --
 vim.api.nvim_set_keymap('n', 'yw', '"+yaw', { noremap = true, silent = true })
 
 -- Map Alt + Left Arrow to go to the previous buffer (cycles in buffer)
-vim.api.nvim_set_keymap('n', '<A-Left>', ':bprev<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<S-Left>', ':bprev<CR>', { noremap = true, silent = true })
 
 -- Map Alt + Right Arrow to go to the next buffer (cycles in buffer)
-vim.api.nvim_set_keymap('n', '<A-Right>', ':bnext<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<S-Right>', ':bnext<CR>', { noremap = true, silent = true })
 
 -- Map Ctrl + Left Arrow to move to the left window (diff buffers)
 vim.api.nvim_set_keymap('n', '<C-Left>', '<C-w>h', { noremap = true, silent = true })
