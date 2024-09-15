@@ -17,6 +17,9 @@ vim.opt.incsearch = true
 vim.opt.cursorline = true
 vim.g.mapleader = " "
 
+-- Faster popups for diagnostics on hover
+vim.opt.updatetime = 200  -- Set faster update time for CursorHold (300 ms)
+
 -- Disable cursorline in insert mode
 vim.cmd([[
   au InsertEnter * set nocursorline
