@@ -60,11 +60,19 @@ return {
         cmd = { "clangd", "--background-index", "--suggest-missing-includes", "--clang-tidy" },
       })
 
+      -- -- Python
+      -- lspconfig.pyright.setup({
+      --   capabilities = capabilities,
+      --   on_attach = function(client, bufnr)
+      --     client.server_capabilities.documentFormattingProvider = false  -- New field
+      --     on_attach(client, bufnr)
+      --   end,
+      -- })
       -- Python
-      lspconfig.pyright.setup({
+      lspconfig.pylsp.setup({
         capabilities = capabilities,
         on_attach = function(client, bufnr)
-          client.server_capabilities.documentFormattingProvider = false  -- New field
+          client.server_capabilities.documentFormattingProvider = false  -- Disable formatting if needed
           on_attach(client, bufnr)
         end,
       })
