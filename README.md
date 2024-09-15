@@ -1,29 +1,36 @@
-# Nvim-config
-
-# Install NeoVim
+## Install NeoVim
+#### MacOS
 ```
-brew install nvim 
+brew install neovim
 ```
 
-# Clone Config
-
+#### Linux
 ```
-cd ~/.config
+sudo apt update
+sudo apt install neovim
+```
 
+## Clone Config
+```
 git clone https://github.com/anthonyb8/nvim-config.git ~/.config/nvim
 ```
 
-# Install Tmux
+## Install Tmux
+#### MacOS
 ```
 brew install tmux
 ```
+#### Linux
+```
+sudo apt install tmux
+```
 
-# Tmux config
+## Tmux config
 ```
 mv ~/.config/nvim/tmux.conf ~/.tmux.conf
 ```
 
-# Install Tmux plugins
+## Install Tmux plugins
 ```
 Ctrl + a | Ctrl + i
 ```
