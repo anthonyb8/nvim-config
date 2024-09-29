@@ -9,7 +9,7 @@ return {
           function()
             return {
               exe = "black", -- Ensure black is installed
-              args = { "--fast", "--line-length", "120", "-" },
+              args = { "--fast", "--line-length", "79", "-" },
               stdin = true
               -- async = true  -- Make it asynchronous
             }
@@ -45,6 +45,16 @@ return {
             }
           end
           -- Add other formatters for different filetypes if needed
+        },
+        html = {
+          -- HTMLBeautify formatter for HTML
+          function()
+            return {
+              exe = "htmlbeautify",
+              args = { "--indent-size", "2" },
+              stdin = true
+            }
+          end
         },
       }
     })

@@ -75,6 +75,15 @@ return {
           client.server_capabilities.documentFormattingProvider = false  -- Disable formatting if needed
           on_attach(client, bufnr)
         end,
+        settings = {
+          pylsp = {
+            plugins = {
+              pycodestyle = {
+                enabled = false  -- Disable pycodestyle
+              },
+            },
+          },
+        },
       })
 
       -- Rust

@@ -5,7 +5,7 @@ return {
       require('lint').linters_by_ft = {
         python = { "ruff" },             -- Python linters
         cpp = { "cppcheck", "cpplint" }, -- C++ linters
-        rust = { "clippy" },             -- Rust linter
+        -- rust = { "clippy" },             -- Rust linter
       }
 
       -- Auto-lint on save
